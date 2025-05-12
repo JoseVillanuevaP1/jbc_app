@@ -1,0 +1,39 @@
+# Entorno virtual
+.venv/
+venv/
+ENV/
+env/
+*.pyc
+__pycache__/
+
+# Archivos de entorno
+.env
+.env.*
+
+# Archivos de base de datos/volcados
+*.rdb
+*.sqlite3
+*.db
+
+# Configuración del editor
+.vscode/
+.idea/
+
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de logs y temporales
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Compilaciones de Python
+build/
+dist/
+*.egg-info/
+
+# Git
+*.orig
