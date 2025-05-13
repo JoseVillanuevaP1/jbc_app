@@ -6,6 +6,8 @@ from pathlib import Path
 from src.routes.user import user
 from src.routes.rol import rol
 from src.routes.user_rol import user_rol
+from src.routes.client import client
+from src.routes.document_type import document_type
 
 import mimetypes
 mimetypes.init()
@@ -23,6 +25,8 @@ app.add_middleware(
 app.include_router(user, prefix="/api")
 app.include_router(rol, prefix="/api")
 app.include_router(user_rol, prefix="/api")
+app.include_router(document_type, prefix="/api")
+app.include_router(client, prefix="/api")
 
 app.mount("/uploads", StaticFiles(directory="./uploads"), name="uploads")
 try:
